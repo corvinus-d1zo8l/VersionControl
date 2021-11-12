@@ -33,6 +33,5 @@ namespace gyak8.Entities
             Left += 1;
         }
     }
-    }
 }
-}
+
