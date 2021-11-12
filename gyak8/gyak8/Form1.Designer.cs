@@ -37,11 +37,13 @@ namespace gyak8
             this.btnSelectBall = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblNext = new System.Windows.Forms.Label();
+            this.btnColor = new System.Windows.Forms.Button();
             this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPanel
             // 
+            this.mainPanel.Controls.Add(this.btnColor);
             this.mainPanel.Controls.Add(this.lblNext);
             this.mainPanel.Controls.Add(this.label1);
             this.mainPanel.Controls.Add(this.btnSelectBall);
@@ -99,6 +101,16 @@ namespace gyak8
             this.lblNext.TabIndex = 3;
             this.lblNext.Text = "label2";
             // 
+            // btnColor
+            // 
+            this.btnColor.BackColor = System.Drawing.Color.Red;
+            this.btnColor.Location = new System.Drawing.Point(157, 28);
+            this.btnColor.Name = "btnColor";
+            this.btnColor.Size = new System.Drawing.Size(148, 47);
+            this.btnColor.TabIndex = 4;
+            this.btnColor.UseVisualStyleBackColor = false;
+            this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -122,6 +134,7 @@ namespace gyak8
         private System.Windows.Forms.Button btnSelectBall;
         private System.Windows.Forms.Button btnSelectCar;
         private System.Windows.Forms.Label lblNext;
+        private System.Windows.Forms.Button btnColor;
     }
 }
 
