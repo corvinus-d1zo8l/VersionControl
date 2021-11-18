@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{648B2B68-02AF-474B-8DB0-9B0E4F12EDCF}</ProjectGuid>
+    <ProjectGuid>{A4B447A3-5247-4A7E-8D62-D3013EB43636}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>gyak6</RootNamespace>
     <AssemblyName>gyak6</AssemblyName>
@@ -35,8 +35,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,11 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\MnbServiceReference\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,50 +63,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Connected Services\MnbServiceReference\arfolyamok.wsdl" />
-    <None Include="Connected Services\MnbServiceReference\arfolyamok.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\MnbServiceReference\arfolyamok1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\MnbServiceReference\gyak6.MnbServiceReference.GetCurrenciesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MnbServiceReference\gyak6.MnbServiceReference.GetCurrenciesResponseBody.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MnbServiceReference\gyak6.MnbServiceReference.GetCurrencyUnitsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MnbServiceReference\gyak6.MnbServiceReference.GetCurrencyUnitsResponseBody.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MnbServiceReference\gyak6.MnbServiceReference.GetCurrentExchangeRatesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MnbServiceReference\gyak6.MnbServiceReference.GetCurrentExchangeRatesResponseBody.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MnbServiceReference\gyak6.MnbServiceReference.GetDateIntervalResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MnbServiceReference\gyak6.MnbServiceReference.GetDateIntervalResponseBody.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MnbServiceReference\gyak6.MnbServiceReference.GetExchangeRatesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MnbServiceReference\gyak6.MnbServiceReference.GetExchangeRatesResponseBody.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MnbServiceReference\gyak6.MnbServiceReference.GetInfoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MnbServiceReference\gyak6.MnbServiceReference.GetInfoResponseBody.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MnbServiceReference\MNBArfolyamServiceSoapImpl.wsdl" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -126,27 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\MnbServiceReference\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\MnbServiceReference\arfolyamok.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\MnbServiceReference\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\MnbServiceReference\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\MnbServiceReference\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
