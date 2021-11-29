@@ -13,5 +13,6 @@ namespace gyak10.Entities
         public int NbrOfChildren { get; set; }
 
         public double Birthprobabilities { get; set; }
+        public double BirthProbabilities { get; internal set; }
     }
 }

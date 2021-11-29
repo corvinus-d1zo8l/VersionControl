@@ -13,5 +13,6 @@ namespace gyak10.Entities
         public int Age { get; set; }
 
         public double DeathProbabilies { get; set; }
+        public double DeathProbabilities { get; internal set; }
     }
 }
