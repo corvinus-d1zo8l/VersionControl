@@ -14,5 +14,7 @@ namespace gyak10.Entities
 
         public double DeathProbabilies { get; set; }
         public double DeathProbabilities { get; internal set; }
+
+        Random rng = new Random(1234);
     }
 }
